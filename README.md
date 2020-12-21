@@ -1,5 +1,3 @@
-php-badwords
-
 <strong><i>php-badwords</i></strong>
 
 <hr>
