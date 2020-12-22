@@ -32,6 +32,9 @@
 
         // variabile con metodo GET che mi permette di sostituire una parola in $par
         $badwords = $_GET['badwords'];
+
+        // "paragrafo" modificato
+        $parmod = str_replace($badwords, '***', $par);
     ?>
 
 </head>
@@ -42,8 +45,8 @@
     <hr>
     <!-- stringa modificata -->
     <p>La parola da cambiare è: <?php echo $badwords ?></p>
-    <p>La stringa modificata è: <?php echo str_replace($badwords, '***', $par) ?></p>
-    <p>Ed è lunga <?php echo strlen(str_replace($badwords, '***', $par)) ?> caratteri.</p>
+    <p>La stringa modificata è: <?php echo $parmod ?></p>
+    <p>Ed è lunga <?php echo strlen($parmod) ?> caratteri.</p>
 
     <!-- http://localhost/bcesercizi/php-badwords/index.php?badwords=consectetur -->
 </body>
